@@ -1,0 +1,36 @@
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DA41867B822547\"",
+  "name": "course-json-skillset",
+  "description": "Skillset created from the portal. skillsetName: course-json-skillset; contentField: title; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/title",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/title"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/4c2045fc-9062-469b-a04d-fce56e0512a0/resourceGroups/aind-196998/providers/Microsoft.CognitiveServices/accounts/ldot-cognitive-service",
+    "key": "8142d1d87e794986b4c388707011e9da"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

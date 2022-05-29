@@ -1,0 +1,1431 @@
+Query 1: search=*&$select=title, instructor&$filter=search.ismatch('Claudia*', 'instructor')
+
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "title": "DevOps for Ops",
+      "instructor": "Claudia Blackman"
+    },
+    {
+      "@search.score": 1,
+      "title": "Git Workflow ",
+      "instructor": "Claudia Blackman"
+    },
+    {
+      "@search.score": 1,
+      "title": "DevOps for Dev",
+      "instructor": "Claudia Blackman"
+    }
+  ]
+}
+
+
+///////////////////
+Query 2: search=*$filter=title eq GitHub*&$select=title, keyphrases
+
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub",
+      "keyphrases": [
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Maintain a secure repository by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "secure repository"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Leverage GitHub Actions to publish to GitHub Packages",
+      "keyphrases": [
+        "Leverage GitHub Actions",
+        "GitHub Packages"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Settle competing commits by using merge conflict resolution on GitHub",
+      "keyphrases": [
+        "merge conflict resolution",
+        "competing commits",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Create and host web sites by using GitHub Pages",
+      "keyphrases": [
+        "web sites",
+        "GitHub Pages"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Migrate your repository by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "repository"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage repository changes by using pull requests on GitHub",
+      "keyphrases": [
+        "repository changes",
+        "pull",
+        "requests",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage repository changes by using pull requests on GitHub",
+      "keyphrases": [
+        "repository changes",
+        "pull",
+        "requests",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate GitHub by using GitHub Script",
+      "keyphrases": [
+        "GitHub Script"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage software delivery by using a release based workflow on GitHub",
+      "keyphrases": [
+        "software delivery",
+        "release",
+        "workflow",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Settle competing commits by using merge conflict resolution on GitHub",
+      "keyphrases": [
+        "merge conflict resolution",
+        "competing commits",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Build continuous integration (CI) workflows by using GitHub Actions",
+      "keyphrases": [
+        "CI) workflows",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub",
+      "keyphrases": [
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate development tasks by using GitHub Actions",
+      "keyphrases": [
+        "development tasks",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Build and deploy applications to Azure by using GitHub Actions",
+      "keyphrases": [
+        "GitHub Actions",
+        "applications",
+        "Azure"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Build and deploy applications to Azure by using GitHub Actions",
+      "keyphrases": [
+        "GitHub Actions",
+        "applications",
+        "Azure"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate DevOps processes by using GitHub Apps",
+      "keyphrases": [
+        "DevOps processes",
+        "GitHub Apps"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate DevOps processes by using GitHub Apps",
+      "keyphrases": [
+        "DevOps processes",
+        "GitHub Apps"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Search and organize repository history by using GitHub",
+      "keyphrases": [
+        "repository history",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Search and organize repository history by using GitHub",
+      "keyphrases": [
+        "repository history",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage repository changes by using pull requests on GitHub",
+      "keyphrases": [
+        "repository changes",
+        "pull",
+        "requests",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Upload your project by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "project"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Maintain a secure repository by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "secure repository"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Leverage GitHub Actions to publish to GitHub Packages",
+      "keyphrases": [
+        "Leverage GitHub Actions",
+        "GitHub Packages"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Leverage GitHub Actions to publish to GitHub Packages",
+      "keyphrases": [
+        "Leverage GitHub Actions",
+        "GitHub Packages"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub in Visual Studio Code",
+      "keyphrases": [
+        "Visual Studio Code",
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub in Visual Studio Code",
+      "keyphrases": [
+        "Visual Studio Code",
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage repository changes by using pull requests on GitHub",
+      "keyphrases": [
+        "repository changes",
+        "pull",
+        "requests",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Upload your project by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "project"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub's Products",
+      "keyphrases": [
+        "Introduction",
+        "GitHub",
+        "Products"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Maintain a secure repository by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "secure repository"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Create an open-source program by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "open-source program"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Build continuous integration (CI) workflows by using GitHub Actions",
+      "keyphrases": [
+        "CI) workflows",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Azure Kubernetes Service deployment pipeline and GitHub Actions",
+      "keyphrases": [
+        "Azure Kubernetes Service deployment pipeline",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate GitHub by using GitHub Script",
+      "keyphrases": [
+        "GitHub Script"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate GitHub by using GitHub Script",
+      "keyphrases": [
+        "GitHub Script"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage an InnerSource program by using GitHub",
+      "keyphrases": [
+        "InnerSource program",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage an InnerSource program by using GitHub",
+      "keyphrases": [
+        "InnerSource program",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage an InnerSource program by using GitHub",
+      "keyphrases": [
+        "InnerSource program",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub in Visual Studio Code",
+      "keyphrases": [
+        "Visual Studio Code",
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub in Visual Studio Code",
+      "keyphrases": [
+        "Visual Studio Code",
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate development tasks by using GitHub Actions",
+      "keyphrases": [
+        "development tasks",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Manage software delivery by using a release based workflow on GitHub",
+      "keyphrases": [
+        "software delivery",
+        "release",
+        "workflow",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Settle competing commits by using merge conflict resolution on GitHub",
+      "keyphrases": [
+        "merge conflict resolution",
+        "competing commits",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate DevOps processes by using GitHub Apps",
+      "keyphrases": [
+        "DevOps processes",
+        "GitHub Apps"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub",
+      "keyphrases": [
+        "Introduction",
+        "GitHub"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Automate development tasks by using GitHub Actions",
+      "keyphrases": [
+        "development tasks",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Create and host web sites by using GitHub Pages",
+      "keyphrases": [
+        "web sites",
+        "GitHub Pages"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Introduction to GitHub administration",
+      "keyphrases": [
+        "GitHub administration",
+        "Introduction"
+      ]
+    },
+    {
+      "@search.score": 4,
+      "title": "Migrate your repository by using GitHub best practices",
+      "keyphrases": [
+        "GitHub best practices",
+        "repository"
+      ]
+    }
+  ],
+  "@odata.nextLink": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/docs?api-version=2021-04-30-Preview&search=%2A%24filter%3Dtitle%20eq%20GitHub%2A&$select=title%2C%20keyphrases&$skip=50"
+}
+
+///////////////////
+Query 3: search=*&$select=title, level, duration, rating_count, rating_average&$filter=duration gt 50
+
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "title": "Implement a code workflow in your build pipeline by using Git and GitHub",
+      "level": "beginner",
+      "duration": 87,
+      "rating_count": 3821,
+      "rating_average": 4.77
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "level": "beginner",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6
+    },
+    {
+      "@search.score": 1,
+      "title": "Provision databases in Azure Pipelines",
+      "level": "intermediate",
+      "duration": 62,
+      "rating_count": 0,
+      "rating_average": 0
+    },
+    {
+      "@search.score": 1,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "level": "intermediate",
+      "duration": 65,
+      "rating_count": 13,
+      "rating_average": 4.85
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "level": "beginner",
+      "duration": 56,
+      "rating_count": 22,
+      "rating_average": 4.27
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "level": "beginner",
+      "duration": 56,
+      "rating_count": 22,
+      "rating_average": 4.27
+    },
+    {
+      "@search.score": 1,
+      "title": "Introduction to GitHub",
+      "level": "beginner",
+      "duration": 72,
+      "rating_count": 1120,
+      "rating_average": 4.74
+    },
+    {
+      "@search.score": 1,
+      "title": "Maintain a secure repository by using GitHub best practices",
+      "level": "beginner",
+      "duration": 69,
+      "rating_count": 320,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Maintain a secure repository by using GitHub best practices",
+      "level": "beginner",
+      "duration": 69,
+      "rating_count": 320,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Define an AI strategy to create business value",
+      "level": "intermediate",
+      "duration": 70,
+      "rating_count": 2779,
+      "rating_average": 4.71
+    },
+    {
+      "@search.score": 1,
+      "title": "Discuss practices for responsible AI at Microsoft",
+      "level": "intermediate",
+      "duration": 77,
+      "rating_count": 424,
+      "rating_average": 4.8
+    },
+    {
+      "@search.score": 1,
+      "title": "Implement AI in your organization",
+      "level": "intermediate",
+      "duration": 56,
+      "rating_count": 42,
+      "rating_average": 4.81
+    },
+    {
+      "@search.score": 1,
+      "title": "Configure infrastructure in Azure Pipelines",
+      "level": "beginner",
+      "duration": 62,
+      "rating_count": 464,
+      "rating_average": 4.57
+    },
+    {
+      "@search.score": 1,
+      "title": "Configure infrastructure in Azure Pipelines",
+      "level": "beginner",
+      "duration": 62,
+      "rating_count": 464,
+      "rating_average": 4.57
+    },
+    {
+      "@search.score": 1,
+      "title": "Configure infrastructure in Azure Pipelines",
+      "level": "beginner",
+      "duration": 62,
+      "rating_count": 464,
+      "rating_average": 4.57
+    },
+    {
+      "@search.score": 1,
+      "title": "Build and deploy applications to Azure by using GitHub Actions",
+      "level": "intermediate",
+      "duration": 54,
+      "rating_count": 248,
+      "rating_average": 4.74
+    },
+    {
+      "@search.score": 1,
+      "title": "Settle competing commits by using merge conflict resolution on GitHub",
+      "level": "beginner",
+      "duration": 52,
+      "rating_count": 273,
+      "rating_average": 4.83
+    },
+    {
+      "@search.score": 1,
+      "title": "Run functional tests in Azure Pipelines",
+      "level": "beginner",
+      "duration": 63,
+      "rating_count": 800,
+      "rating_average": 4.66
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and host web sites by using GitHub Pages",
+      "level": "beginner",
+      "duration": 72,
+      "rating_count": 118,
+      "rating_average": 4.8
+    },
+    {
+      "@search.score": 1,
+      "title": "Manage release cadence in Azure Pipelines by using deployment patterns",
+      "level": "intermediate",
+      "duration": 60,
+      "rating_count": 604,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Manage release cadence in Azure Pipelines by using deployment patterns",
+      "level": "intermediate",
+      "duration": 60,
+      "rating_count": 604,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate DevOps processes by using GitHub Apps",
+      "level": "beginner",
+      "duration": 68,
+      "rating_count": 229,
+      "rating_average": 4.79
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a multistage pipeline by using Azure Pipelines",
+      "level": "beginner",
+      "duration": 73,
+      "rating_count": 1004,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a multistage pipeline by using Azure Pipelines",
+      "level": "beginner",
+      "duration": 73,
+      "rating_count": 1004,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a release pipeline in Azure Pipelines",
+      "level": "beginner",
+      "duration": 64,
+      "rating_count": 1201,
+      "rating_average": 4.7
+    },
+    {
+      "@search.score": 1,
+      "title": "Define an AI strategy to create value in education",
+      "level": "intermediate",
+      "duration": 51,
+      "rating_count": 628,
+      "rating_average": 4.76
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a Regression Model with Azure Machine Learning designer",
+      "level": "beginner",
+      "duration": 55,
+      "rating_count": 2352,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1,
+      "title": "Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)",
+      "level": "intermediate",
+      "duration": 54,
+      "rating_count": 1855,
+      "rating_average": 4.67
+    },
+    {
+      "@search.score": 1,
+      "title": "Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)",
+      "level": "intermediate",
+      "duration": 54,
+      "rating_count": 1855,
+      "rating_average": 4.67
+    },
+    {
+      "@search.score": 1,
+      "title": "Apply AI Builder Text Recognition in the transportation industry",
+      "level": "beginner",
+      "duration": 108,
+      "rating_count": 10,
+      "rating_average": 4.8
+    },
+    {
+      "@search.score": 1,
+      "title": "Get started with AI Builder Business card reader",
+      "level": "beginner",
+      "duration": 90,
+      "rating_count": 157,
+      "rating_average": 4.62
+    },
+    {
+      "@search.score": 1,
+      "title": " Cloud DevOps Engineer",
+      "level": "Intermediate ",
+      "duration": 120,
+      "rating_count": 600,
+      "rating_average": 4.6
+    },
+    {
+      "@search.score": 1,
+      "title": "AI Programming with Python ",
+      "level": "beginner ",
+      "duration": 90,
+      "rating_count": 800,
+      "rating_average": 4.6
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "level": "beginner",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6
+    },
+    {
+      "@search.score": 1,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "level": "intermediate",
+      "duration": 65,
+      "rating_count": 13,
+      "rating_average": 4.85
+    },
+    {
+      "@search.score": 1,
+      "title": "Communicate effectively on GitHub by using Markdown",
+      "level": "beginner",
+      "duration": 62,
+      "rating_count": 288,
+      "rating_average": 4.76
+    },
+    {
+      "@search.score": 1,
+      "title": "Discuss practices for responsible AI at Microsoft",
+      "level": "intermediate",
+      "duration": 77,
+      "rating_count": 424,
+      "rating_average": 4.8
+    },
+    {
+      "@search.score": 1,
+      "title": "Implement AI in your organization",
+      "level": "intermediate",
+      "duration": 56,
+      "rating_count": 42,
+      "rating_average": 4.81
+    },
+    {
+      "@search.score": 1,
+      "title": "Configure infrastructure in Azure Pipelines",
+      "level": "beginner",
+      "duration": 62,
+      "rating_count": 464,
+      "rating_average": 4.57
+    },
+    {
+      "@search.score": 1,
+      "title": "Deploy a cloud-native ASP.NET Core microservice with GitHub Actions",
+      "level": "intermediate",
+      "duration": 54,
+      "rating_count": 38,
+      "rating_average": 4.79
+    },
+    {
+      "@search.score": 1,
+      "title": "Deploy a cloud-native ASP.NET Core microservice with GitHub Actions",
+      "level": "intermediate",
+      "duration": 54,
+      "rating_count": 38,
+      "rating_average": 4.79
+    },
+    {
+      "@search.score": 1,
+      "title": "Manage software delivery by using a release based workflow on GitHub",
+      "level": "beginner",
+      "duration": 104,
+      "rating_count": 244,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 1,
+      "title": "Settle competing commits by using merge conflict resolution on GitHub",
+      "level": "beginner",
+      "duration": 52,
+      "rating_count": 273,
+      "rating_average": 4.83
+    },
+    {
+      "@search.score": 1,
+      "title": "Run functional tests in Azure Pipelines",
+      "level": "beginner",
+      "duration": 63,
+      "rating_count": 800,
+      "rating_average": 4.66
+    },
+    {
+      "@search.score": 1,
+      "title": "Manage release cadence in Azure Pipelines by using deployment patterns",
+      "level": "intermediate",
+      "duration": 60,
+      "rating_count": 604,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Manage release cadence in Azure Pipelines by using deployment patterns",
+      "level": "intermediate",
+      "duration": 60,
+      "rating_count": 604,
+      "rating_average": 4.72
+    },
+    {
+      "@search.score": 1,
+      "title": "Track wild polar bears with AI",
+      "level": "beginner",
+      "duration": 82,
+      "rating_count": 318,
+      "rating_average": 4.68
+    },
+    {
+      "@search.score": 1,
+      "title": "Introduction to the Azure Machine Learning SDK",
+      "level": "beginner",
+      "duration": 60,
+      "rating_count": 2869,
+      "rating_average": 4.65
+    },
+    {
+      "@search.score": 1,
+      "title": "Build continuous integration (CI) workflows by using GitHub Actions",
+      "level": "beginner",
+      "duration": 55,
+      "rating_count": 287,
+      "rating_average": 4.71
+    },
+    {
+      "@search.score": 1,
+      "title": "Azure Kubernetes Service deployment pipeline and GitHub Actions",
+      "level": "beginner",
+      "duration": 80,
+      "rating_count": 36,
+      "rating_average": 4.5
+    }
+  ],
+  "@odata.nextLink": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/docs?api-version=2021-04-30-Preview&search=%2A&$select=title%2C%20level%2C%20duration%2C%20rating_count%2C%20rating_average&$filter=duration%20gt%2050&$skip=50"
+}
+
+///////////////////
+Query 4: search=*$filter=source eq ms&$select=title, level, source
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 10.56795,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 10.440883,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 10.283067,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 10.283067,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.863108,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.863108,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.324048,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.324048,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.055362,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 9.055362,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 8.550073,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 8.316727,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines",
+      "level": "intermediate"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.791008,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.791008,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.4145446,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.4145446,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.2328687,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines",
+      "level": "intermediate"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.128907,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.128907,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 7.075986,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.5868096,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 6.28986,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 5.4449964,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines",
+      "level": "intermediate"
+    },
+    {
+      "@search.score": 5.4449964,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines",
+      "level": "intermediate"
+    },
+    {
+      "@search.score": 0.111871846,
+      "source": "MS Learn",
+      "title": "Automate Node.js deployments with Azure Pipelines",
+      "level": "beginner"
+    },
+    {
+      "@search.score": 0.111871846,
+      "source": "MS Learn",
+      "title": "Microsoft Azure Artificial Intelligence (AI) strategy and solutions",
+      "level": "beginner"
+    }
+  ],
+  "@odata.nextLink": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/docs?api-version=2021-04-30-Preview&search=%2A%24filter%3Dsource%20eq%20ms&$select=title%2C%20level%2C%20source&$skip=50"
+}
+
+///////////////////
+Query 5: search=*$filter=source eq ms&$select=title, source
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 10.56795,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 10.440883,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 10.283067,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 10.283067,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.863108,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.863108,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.324048,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.324048,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.055362,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 9.055362,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 8.550073,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 8.316727,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 8.091209,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.791008,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.791008,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.729501,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.4145446,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 7.4145446,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 7.2328687,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.1853824,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 7.128907,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 7.128907,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 7.075986,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.854121,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.8090887,
+      "source": "MS Learn",
+      "title": "Contribute to an open-source project on GitHub"
+    },
+    {
+      "@search.score": 6.5868096,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 6.28986,
+      "source": "MS Learn",
+      "title": "Create an open-source program by using GitHub best practices"
+    },
+    {
+      "@search.score": 5.4449964,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines"
+    },
+    {
+      "@search.score": 5.4449964,
+      "source": "MS Learn",
+      "title": "Scan open source components for vulnerabilities and license ratings in Azure Pipelines"
+    },
+    {
+      "@search.score": 0.111871846,
+      "source": "MS Learn",
+      "title": "Automate Node.js deployments with Azure Pipelines"
+    },
+    {
+      "@search.score": 0.111871846,
+      "source": "MS Learn",
+      "title": "Microsoft Azure Artificial Intelligence (AI) strategy and solutions"
+    }
+  ],
+  "@odata.nextLink": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/docs?api-version=2021-04-30-Preview&search=%2A%24filter%3Dsource%20eq%20ms&$select=title%2C%20source&$skip=50"
+}
+

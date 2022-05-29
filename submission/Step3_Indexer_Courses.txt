@@ -1,0 +1,55 @@
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DA4186A0DDE8A5\"",
+  "name": "course-json-indexer",
+  "description": "",
+  "dataSourceName": "course-json",
+  "skillsetName": "course-json-skillset",
+  "targetIndexName": "course-json-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": null,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "jsonArray"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "RowKey",
+      "targetFieldName": "RowKey",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/title/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/profile",
+      "targetFieldName": "profile"
+    },
+    {
+      "sourceFieldName": "/document/instructor/profile_complex/*/description",
+      "targetFieldName": "description"
+    },
+    {
+      "sourceFieldName": "/document/profile/description",
+      "targetFieldName": "profile_desc"
+    },
+    {
+      "sourceFieldName": "/document/profile",
+      "targetFieldName": "profile_complex"
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}

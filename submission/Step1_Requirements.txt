@@ -1,0 +1,19 @@
+List of Requirements
+--------------------
+Learners can search Course Data to get meaningful results, and filter and facet results to narrow search results:
+
+• Users can search text fields for key words in title, description
+• Users can facet results by level e.g., beginner
+• Users can filter and facet by product e.g., azure
+• Users can filter results by source
+• Users can filter and facet role e.g., developer
+• Users can facet on technology
+• Users can facet on enriched data for open access journal PDFs
+• Users can facet on enriched data for Course Category
+• Users can facet with pre-defined filters for internal courses
+• Users can get course instructor profiles (for internal courses) 
+• Users can find PDFs of relevant open access journals by searching keywords and phrases, authors, and their associated institutions, publication name, publisher, and publication date
+• Users can get DOI (Digital Object Identifier) URL for journals
+• Users can get URLs
+• Users can filter results by course ratings 
+• Users can filter results by duration

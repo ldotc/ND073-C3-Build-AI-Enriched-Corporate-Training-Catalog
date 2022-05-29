@@ -1,0 +1,86 @@
+Query 1: select=product&facet=role
+
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/$metadata#docs(*)",
+  "@search.facets": {
+    "role": [
+      {
+        "count": 174,
+        "value": "developer"
+      },
+      {
+        "count": 130,
+        "value": "solution-architect"
+      },
+      {
+        "count": 108,
+        "value": "business-user"
+      },
+      {
+        "count": 106,
+        "value": "devops-engineer"
+      },
+      {
+        "count": 105,
+        "value": "administrator"
+      },
+      {
+        "count": 75,
+        "value": "functional-consultant"
+      },
+      {
+        "count": 56,
+        "value": "data-scientist"
+      },
+      {
+        "count": 56,
+        "value": "maker"
+      },
+      {
+        "count": 56,
+        "value": "student"
+      },
+      {
+        "count": 47,
+        "value": "ai-engineer"
+      }
+    ]
+  },
+  "@odata.nextLink": "https://ldot-cognitive-search.search.windows.net/indexes('course-json-index')/docs?api-version=2021-04-30-Preview&search=%2A%24filter%3Dlevel%20eq%20beginner&$skip=50"
+}
+
+
+
+///////////////////
+Query 2: select=metadata_title, metadata_author&facet=metadata_author
+
+library-index
+index
+Documents
+0
+Storage
+0 Bytes
+Search explorer
+Fields
+CORS
+Scoring profiles
+Semantic configurations
+Index Definition (JSON)
+Query string
+select=metadata_title, metadata_author&facet=metadata_author
+Request URL
+https://ldot-cognitive-search.search.windows.net/indexes/library-index/docs?api-version=2021-04-30-Preview&search=*&select=metadata_title%2C%20metadata_author&facet=metadata_author
+Results
+2728293031323334353637383940414243444546474849502223242526
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/indexes('library-index')/$metadata#docs(*)",
+  "@search.facets": {
+    "metadata_author": [
+      {
+        "count": 3,
+        "value": ""
+      },
+      {
+        "count": 1,
+
+

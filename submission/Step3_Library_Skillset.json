@@ -1,0 +1,223 @@
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DA41A044067B4B\"",
+  "name": "library-skillset",
+  "description": "Skillset created from the portal. skillsetName: library-skillset; contentField: merged_content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/merged_content",
+      "categories": [
+        "Product",
+        "PhoneNumber",
+        "Person",
+        "Quantity",
+        "Organization",
+        "IPAddress",
+        "URL",
+        "Email",
+        "Event",
+        "Skill",
+        "Location",
+        "PersonType",
+        "Address",
+        "DateTime"
+      ],
+      "defaultLanguageCode": "en",
+      "minimumPrecision": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content"
+        },
+        {
+          "name": "languageCode",
+          "source": "/document/language"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "persons",
+          "targetName": "people"
+        },
+        {
+          "name": "locations",
+          "targetName": "locations"
+        },
+        {
+          "name": "organizations",
+          "targetName": "organizations"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+      "name": "Publication Info",
+      "description": "",
+      "context": "/document",
+      "uri": "https://get-publication-info.azurewebsites.net/api/springerlookup?code=sOXhjiJl1qnKuFfb1eDMCLly4daOkMeQnAbzC56eGDVIAzFuVtEHcw==",
+      "httpMethod": "POST",
+      "timeout": "PT30S",
+      "batchSize": 5,
+      "degreeOfParallelism": 5,
+      "inputs": [
+        {
+          "name": "ArticleName",
+          "source": "/document/metadata_title"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "publicationName",
+          "targetName": "publication_info/publicationName"
+        },
+        {
+          "name": "doi",
+          "targetName": "publication_info/DOI"
+        },
+        {
+          "name": "publisher",
+          "targetName": "publication_info/publisher"
+        },
+        {
+          "name": "publicationDate",
+          "targetName": "publication_info/publicationDate"
+        }
+      ],
+      "httpHeaders": {}
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+      "name": "Publication Info Collection",
+      "description": "",
+      "context": "/document",
+      "uri": "https://get-publication-info.azurewebsites.net/api/springerlookup?code=sOXhjiJl1qnKuFfb1eDMCLly4daOkMeQnAbzC56eGDVIAzFuVtEHcw==",
+      "httpMethod": "POST",
+      "timeout": "PT30S",
+      "batchSize": 5,
+      "degreeOfParallelism": 5,
+      "inputs": [
+        {
+          "name": "ArticleName",
+          "source": "/document/metadata_title"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "doi",
+          "targetName": "publication_info_col_string"
+        }
+      ],
+      "httpHeaders": {}
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#2",
+      "description": null,
+      "context": "/document/merged_content",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content"
+        },
+        {
+          "name": "languageCode",
+          "source": "/document/language"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.LanguageDetectionSkill",
+      "name": "#3",
+      "description": null,
+      "context": "/document",
+      "defaultCountryHint": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "languageCode",
+          "targetName": "language"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.MergeSkill",
+      "name": "#4",
+      "description": null,
+      "context": "/document",
+      "insertPreTag": " ",
+      "insertPostTag": " ",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content"
+        },
+        {
+          "name": "itemsToInsert",
+          "source": "/document/normalized_images/*/text"
+        },
+        {
+          "name": "offsets",
+          "source": "/document/normalized_images/*/contentOffset"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mergedText",
+          "targetName": "merged_content"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Vision.OcrSkill",
+      "name": "#5",
+      "description": null,
+      "context": "/document/normalized_images/*",
+      "textExtractionAlgorithm": null,
+      "lineEnding": "Space",
+      "defaultLanguageCode": "en",
+      "detectOrientation": true,
+      "inputs": [
+        {
+          "name": "image",
+          "source": "/document/normalized_images/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "targetName": "text"
+        },
+        {
+          "name": "layoutText",
+          "targetName": "layoutText"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/4c2045fc-9062-469b-a04d-fce56e0512a0/resourceGroups/aind-196998/providers/Microsoft.CognitiveServices/accounts/ldot-cognitive-service",
+    "key": "8142d1d87e794986b4c388707011e9da"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

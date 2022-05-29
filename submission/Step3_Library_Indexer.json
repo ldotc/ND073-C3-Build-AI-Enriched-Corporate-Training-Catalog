@@ -1,0 +1,88 @@
+{
+  "@odata.context": "https://ldot-cognitive-search.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DA41A44474C135\"",
+  "name": "library-indexer",
+  "description": "",
+  "dataSourceName": "library",
+  "skillsetName": "library-skillset",
+  "targetIndexName": "library-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": null,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "default",
+      "imageAction": "generateNormalizedImages"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "metadata_storage_path",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/merged_content/people",
+      "targetFieldName": "people"
+    },
+    {
+      "sourceFieldName": "/document/merged_content/locations",
+      "targetFieldName": "locations"
+    },
+    {
+      "sourceFieldName": "/document/merged_content/organizations",
+      "targetFieldName": "organizations"
+    },
+    {
+      "sourceFieldName": "/document/merged_content/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/language",
+      "targetFieldName": "language"
+    },
+    {
+      "sourceFieldName": "/document/merged_content",
+      "targetFieldName": "merged_content"
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/text",
+      "targetFieldName": "text"
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/layoutText",
+      "targetFieldName": "layoutText"
+    },
+    {
+      "sourceFieldName": "/document/publication_info_col_string",
+      "targetFieldName": "pub_info_string"
+    },
+    {
+      "sourceFieldName": "/document/publication_info~1publicationName",
+      "targetFieldName": "pubName"
+    },
+    {
+      "sourceFieldName": "/document/publication_info~1publisher",
+      "targetFieldName": "pubPublisher"
+    },
+    {
+      "sourceFieldName": "/document/publication_info~1DOI",
+      "targetFieldName": "doi"
+    },
+    {
+      "sourceFieldName": "/document/publication_info~1publicationDate",
+      "targetFieldName": "pubDate"
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}
