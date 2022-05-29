@@ -99,9 +99,9 @@
         serviceUrl is found in the Overview
     */
     const opts = {
-        headers: {'Content-Type': 'application/json', 'api-key':'K5S7M49CMxpuv3OlDFUTG841A4DlV5dFhvaQt08o9LAzSeBC6hHH'}
+        headers: {'Content-Type': 'application/json', 'api-key':'IPIGI4CUhqMjyVDPNfu04aIS7xcigU5l2umYByORwYAzSeBtsV4h'}
     }
-    const serviceUrl = 'https://ldot-cognitive-search.search.windows.net'
+    const serviceUrl = 'https://ldot-cognitive-search.search.windows.net/indexes/course-json-index'
     
     /* 
         This demo app uses Vue.js, a progressive framework for building user interfaces.  
@@ -157,7 +157,7 @@
                 return f;
             },
             baseUrl: function(){
-                return `${serviceUrl}/indexes/azuretable-index/docs?api-version=2020-06-30`
+                return `${serviceUrl}/docs?api-version=2020-06-30`
             }
         }
     })
