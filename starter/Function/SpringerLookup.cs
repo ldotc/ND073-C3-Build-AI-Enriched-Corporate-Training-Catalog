@@ -23,7 +23,7 @@ namespace Udacity.springerlookupdemo
           This is where you will configure your Spring API Key
           
         */
-        static readonly string apikey = "<insert API credential here>";
+        static readonly string apikey = "707c5bf85896cfd3c0a4d8a7e4e63ba1";
         static readonly string springerapiendpoint = "http://api.springernature.com/openaccess/json";
 
         #region Class used to deserialize the request
@@ -86,6 +86,7 @@ namespace Udacity.springerlookupdemo
 
             string requestBody = new StreamReader(req.Body).ReadToEnd();
             var data = JsonConvert.DeserializeObject<WebApiRequest>(requestBody);
+            log.LogInformation($"{requestBody}");
 
             // Do some schema validation
             if (data == null)
@@ -128,7 +129,9 @@ namespace Udacity.springerlookupdemo
                 {
                     response.Values.Add(responseRecord);
                 }
+                 log.LogInformation($"{responseRecord.Data}");
             }
+           
 
             return (ActionResult)new OkObjectResult(response);
         }
